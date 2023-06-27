@@ -1,0 +1,110 @@
+/*estilos generales*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;/*calcula el ancho y el alto de los elementos incluye margin pading */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  min-width: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  background-color: gray;
+}
+
+.contenedor {
+  width: 700px;
+  min-height: 500px;
+  background-color: white;
+  padding: 40px;
+  border: 5px solid black;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+input {
+  width: 80%;/*80% del tamano del contenedor*/
+  height: 50px;
+  font-size: 25px;
+  margin: 20px;
+  padding: 20px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+button {
+  width: 150px;
+  height: 60px;
+  padding: 10px;
+  color: white;
+  background-color: blue;
+  border-radius: 20px;
+  border: none;
+  cursor:  pointer;
+  user-select: none;
+}
+
+/*lista de tareas*/
+#lista-de-tareas {
+  width: 80%;
+  margin-top: 20px;
+}
+
+/*tareas*/
+.tarea {
+  width: 100%;
+  min-height: 70px;
+  padding: 10px;
+  margin-top: 10px;
+  color: white;
+  background-color: rgb(135, 134, 151);
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;/*espacio entre*/
+  text-align: center;
+}
+
+/*tareas completadas*/
+.tarea.completada {
+  text-decoration: line-through;/*cuando la tarea esta completada el texto aparece tachado*/
+  background-color: black;
+  border: none;
+}
+
+.tarea p {
+  max-width: 350px;
+}
+
+/*iconos*/
+i {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+
+}
+
+.icono-completar {
+  color: chartreuse;
+}
+
+.icono-eliminar {
+  color: white;
+}
+
+.icono-completar:hover,.icono-eliminar:hover {
+  background-color: rgba(129, 129, 129, 0.836);
+}
